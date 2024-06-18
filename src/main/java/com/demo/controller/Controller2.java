@@ -4,17 +4,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.service.ServiceCities;
+import com.demo.service.ServiceCountries;
 
 @RestController
-public class DemoController {
+public class Controller2 {
 	
 	@Autowired
-	ServiceCities ser;
+	ServiceCountries ser;
 	
-	@GetMapping("/cities")
-	public String getCities () {
-		return ser.cities();
+	@GetMapping("/contries")
+	public String getContries () {
+		return ser.contries();
+
 	}
 
 	
